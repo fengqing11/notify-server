@@ -37,6 +37,7 @@ enum LoveMsgURL {
 
 class API {
   key: string
+
   constructor(key?: string) {
     this.key = key || '' // 为了方便，key在 http中统一添加
   }
@@ -60,8 +61,7 @@ class API {
 
       console.log('天气请求成功==>', city_name)
       return response.data
-    }
-    catch (error) {
+    } catch (error) {
       console.log('天气请求失败==>', error)
       return null
     }
@@ -138,8 +138,7 @@ class API {
     try {
       const response = await axios(LoveMsgURL.oneWord, { timeout: 30000 })
       return response.data
-    }
-    catch (error) {
+    } catch (error) {
       console.log(error)
       return null
     }

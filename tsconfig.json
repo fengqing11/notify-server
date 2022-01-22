@@ -2,15 +2,26 @@
   "compilerOptions": {
     "target": "es2017",
     "module": "esnext",
-    "lib": ["esnext"],
+    "lib": [
+      "esnext"
+    ],
     "moduleResolution": "node",
     "esModuleInterop": true,
     "strict": true,
     "strictNullChecks": true,
     "resolveJsonModule": true,
     "skipDefaultLibCheck": true,
-    "typeRoots": ["typings"]
+    "typeRoots": [
+      "typings"
+    ]
   },
-  "include": ["src", "typings", "test"],
-  "exclude": ["node_modules", "dist"]
+  "include": [
+    "src",
+    "typings",
+    "test"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

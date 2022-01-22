@@ -5,7 +5,7 @@
 import API from '../../api/loveMsg'
 import { wxNotify } from '../WxNotify'
 
-export const goodAfternoon = async() => {
+export const goodAfternoon = async () => {
   const res = await API.getJoke()
 
   let text = '今日份午安来喽:\n'
@@ -19,8 +19,8 @@ ${res.map(n => `『${n.title}』${n.content}`).join('\n\n')}`
   const template = {
     msgtype: 'text',
     text: {
-      content: text,
-    },
+      content: text
+    }
   }
 
   await wxNotify(template)

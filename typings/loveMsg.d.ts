@@ -30,6 +30,7 @@ interface IWeatherResponseProps {
   tem2: string
   alarm: IAlarmProps | null
 }
+
 // 预警信息
 interface IAlarmProps {
   /** 暴雨 */

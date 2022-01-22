@@ -13,12 +13,11 @@ export async function getToken({ id, secret }: IReqToken): Promise<string> {
       url: `${BASE_URL}/cgi-bin/gettoken?corpid=${id}&corpsecret=${secret}`,
       method: 'GET',
       headers: {
-        'Content-Type': 'application/json',
-      },
+        'Content-Type': 'application/json'
+      }
     })
     return response.data.access_token
-  }
-  catch (error) {
+  } catch (error) {
     console.log(error)
     return ''
   }

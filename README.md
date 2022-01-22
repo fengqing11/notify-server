@@ -28,14 +28,14 @@
 ## 已添加功能
 
 - [x] 每天给女友发早安和土味情话
-  - 个人定制化信息
-  - 天气信息
-  - 每日一言
-  - 最美宋词
-  - 雷人笑话
-  - 土味情话
-  - 每日英语
-  - 睡前故事
+    - 个人定制化信息
+    - 天气信息
+    - 每日一言
+    - 最美宋词
+    - 雷人笑话
+    - 土味情话
+    - 每日英语
+    - 睡前故事
 
 ## 效果
 
@@ -101,7 +101,8 @@ TIAN_API_KEY= 天行数据 key
 
 ![secrets](secrets.png)
 
-GitHub Action每天7:30自动执行，脚本配置如下：[ci.yml](https://github.com/JS-banana/notify-server/blob/master/.github/workflows/goodMorning.yml)
+GitHub Action每天7:
+30自动执行，脚本配置如下：[ci.yml](https://github.com/JS-banana/notify-server/blob/master/.github/workflows/goodMorning.yml)
 
 ```yml
 schedule:

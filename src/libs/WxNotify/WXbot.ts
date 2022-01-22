@@ -17,21 +17,20 @@ export default async function WXbot(msg: string) {
       url: `${URL}?key=${WX_BOT_KEY}`,
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
       data: {
         msgtype: 'text',
         text: {
           content: msg,
-          mentioned_list: ['@all'],
+          mentioned_list: ['@all']
           // mentioned_mobile_list: ['@all'], // 通知所以人
-        },
-      },
+        }
+      }
     })
     if (response.data?.errcode === 0)
       console.log('🎉发送成功！！！')
-  }
-  catch (error) {
+  } catch (error) {
     console.log(`发送失败 => ${error}`)
   }
 }

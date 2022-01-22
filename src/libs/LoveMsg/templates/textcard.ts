@@ -30,7 +30,7 @@ export const textCardTemplate = (data: TextCardTemplateProps) => {
     alarm,
     lunarInfo,
     week,
-    oneWord,
+    oneWord
   } = data
 
   // 今日、恋爱天数
@@ -91,7 +91,7 @@ ${win}：${win_speed_day}
       //   url: 'https://api.lovelive.tools/api/SweetNothings',
       //   url: 'https://v1.jinrishici.com/all.svg',
       url: 'https://api.vvhan.com/api/60s', // 60s看世界
-      btntxt: 'By崽崽',
-    },
+      btntxt: 'By崽崽'
+    }
   }
 }

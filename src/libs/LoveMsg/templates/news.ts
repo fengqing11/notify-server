@@ -19,7 +19,7 @@ export const newsTemplate = (list: TodayHeadlines[]) => {
         title: n.title,
         description: n.description,
         url: n.url,
-        picurl: n.picUrl,
+        picurl: n.picUrl
       }
     })
   }
@@ -29,7 +29,7 @@ export const newsTemplate = (list: TodayHeadlines[]) => {
   return {
     msgtype: 'news',
     news: {
-      articles,
-    },
+      articles
+    }
   }
 }
