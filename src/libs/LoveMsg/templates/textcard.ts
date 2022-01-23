@@ -81,7 +81,7 @@ ${win}：${win_speed_day}
   description += `
   [ 点我有惊喜 ] ❤️ 🧡 💛 💚 💖`
 
-  const title = `这是我们相识的第 ${dateLength} 天`
+  const title = `已成功运行 ${dateLength} 天`
 
   return {
     msgtype: 'textcard',
